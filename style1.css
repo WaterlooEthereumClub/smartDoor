@@ -1,0 +1,325 @@
+/*
+
+*/
+/*Full Screen Adjustments*/
+/** Generic **/
+html {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.content-wrapper{
+	min-height: 100%;
+	margin-top: -70px;
+}
+
+/*Images*/
+.waterloo{
+	background-image: url("./imgs/background_image_v6-800.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 600px;
+}
+
+.black{
+	background-color: black;
+	min-height: 70px;
+}
+
+.bubble{
+	background-image: url("./imgs/city-people-bubble-soap.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 70px;
+}
+
+.mountain{
+	background-image: url("./imgs/footer_image-v1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 1400px;
+	opacity: 0.9;
+}
+
+.maps{
+	background-image: url("./imgs/first.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 600px;
+}
+
+
+
+.vision{
+	background: -webkit-linear-gradient(180deg, #FFFFFF 10%, #eef2f3 90%); /* Chrome 10+, Saf5.1+ */
+  	background:    -moz-linear-gradient(180deg, #FFFFFF 10%, #eef2f3 90%); /* FF3.6+ */
+  	background:     -ms-linear-gradient(180deg, #FFFFFF 10%, #eef2f3 90%); /* IE10 */
+  	background:      -o-linear-gradient(180deg, #FFFFFF 10%, #eef2f3 90%); /* Opera 11.10+ */
+  	background:         linear-gradient(180deg, #FFFFFF 10%, #eef2f3 90%); /* W3C */
+	min-height: 510px;
+}
+
+
+.screen-shot{
+	background-image: url("./imgs/imac-front-stand-psd-mockup.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 710px;
+}
+
+.marginless-row{
+	margin-bottom: 0px;
+}
+
+
+/**Navigation Bar**/
+.custom-nav-large{
+	background-color: rgba(255,255,255,0.2);
+	color: rgb(0,0,0);
+	height: 78px;
+}
+
+.custom-nav-small{
+	background-color: rgba(255,255,255,0.9);
+	color: rgb(255,255,255);
+	height: 64px;
+}
+
+.nav-wrapper{
+	margin-left: 10px;
+}
+
+.logo-img-large{
+	height: 65px;
+	width: 40px;
+	margin-left: 10px;
+	margin-top: 9px;
+	background-image: url("./imgs/Oxygn_logo_text.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.logo-img-small{
+	height: 45px;
+	width: 45px;
+	margin-left: 10px;
+	margin-top: 9px;
+	background-image: url("./imgs/oxygn_logo_no_text_v1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.message-background{
+	background-color: rgba(0,0,0,0.5);
+}
+
+
+
+/* Splash Message */
+.splash-message-wrapper{
+	display: flex;
+	/*min-height: 400px;*/
+}
+
+.splash-message{
+	display: flex;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding: 50px;
+
+}
+
+.splash-title{
+	font-size: 70px;
+	text-align: center;
+}
+
+/*Footer*/
+
+.footer{
+	display: flex;
+	margin-top: 0px;
+	height: 0px;
+	z-index: 1;
+	color: white;
+}
+
+.footer-item{
+	display: flex;
+	color: ##C0392B;
+	text-align: center;
+	font-weight: 300;
+	margin: 0 auto;
+	font-size: 17px;
+}
+
+.footer-wrapper{
+    padding-bottom: 35px;
+}
+
+.footer-address{
+	font-size: 12px;
+}
+
+/* Vision Message */
+.splash-message-wrapper{
+	display: flex;
+	min-height: 400px;
+}
+
+
+.vision-message{
+	position: fixed;
+	text-align: center;
+	top: 30%;
+	font-size: 50px;
+	font-size: 35px;
+}
+
+/** Animations **/
+.animation-container {
+  height: 633px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.animation-frame {
+  left: 50%;
+  margin-left: -155px;
+  position: absolute;
+}
+
+.animation-video {
+  left: 50%;
+  margin-left: -134px;
+  position: absolute;
+  top: 77px;
+  width: 268px;
+}
+
+.mac-animation-container {
+  height: 633px;
+  position: relative;
+}
+
+.mac-animation-frame {
+	position: absolute;
+	margin-left: -385px;
+	left: 50%;
+	z-index: 1;
+}
+
+.mac-animation-img{
+  margin-left: -359px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 700px;
+}
+
+/** MISC **/
+.primary-content{
+	min-height: 400px;
+	color: rgb(255,255,255);
+}
+
+i[class*="fa"]:hover{
+    color: #C0392B;
+}
+
+i[class*="fa"]{
+    color: black;
+}
+
+.phone-frame{
+	height: 507px;
+	width: 248px;
+}
+
+.feature-img{
+	width: 50px;
+    height: 50px;
+}
+
+.partner-img{
+	width: 100px;
+}
+
+.feature-text{
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.bullet-point{
+	list-style-type: square;
+	margin-left: 50px;
+}
+
+.pdfviewer{
+	margin-top: 100px;
+    min-height: 600px;
+}
+
+.action-color{
+	background-color: #C0392B;
+}
+
+.nav ul a {
+	color: #C0392B
+}
+
+.nav ul li {
+	height: 100%;`	
+}
+
+.nav a {
+	color: #C0392B;
+}
+
+.menu-item{
+	color: rgb(192, 57, 43);
+    font-weight: 500;
+    height: 78px;
+    line-height: 78px;
+}
+
+.heavy-font {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 60px;
+}
+
+.medium-font {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+}
+
+.light-font{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+}
+
+.btn:hover{
+	background-color: black;
+}
+
+.light-background {
+	background-color: #F0F8FF;
+}

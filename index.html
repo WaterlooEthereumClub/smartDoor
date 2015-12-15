@@ -1,0 +1,107 @@
+<!doctype>
+<html>
+<head>
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+
+<!--Custom Styles-->
+<link rel="stylesheet" href="style1.css"></link>
+
+<!--Font Awsome Icons -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:600' rel='stylesheet' type='text/css'>
+
+<script type='text/javascript'>
+
+function open() {
+   var param = document.getElementById('key').value;
+   var res = contracts['smartDoor'].contract.openDoor.call({from: param});
+	if (res){
+		Materialize.toast("The door has opened!", 4000);
+	} else {
+		Materialize.toast("Sorry, you don't got keys!", 4000);
+	}
+	
+	
+   //document.getElementById('queryres').innerText = res;
+	//console.log(res);
+}
+
+function addOwner() {
+  var param = document.getElementById('key').value;
+  var param1 = document.getElementById('userKey').value;
+  var res = contracts['smartDoor'].contract.addOwner.call(param1);
+
+  if (res){
+    Materialize.toast("The door has opened!", 4000);
+  } else {
+    Materialize.toast("Good Job, now you need one more person!", 4000);
+  }
+}
+
+</script>
+</head>
+<body>
+  <div class="content-wrapper vision">
+    <!-- Slider -->
+    <div id="slider-img" class="row slider-image marginless-row">
+
+      <div class="splash-message-wrapper">
+        <div class="splash-message">
+          <div class="row">
+            <div class="col s12">
+              <span class="heavy-font"> Smart Door</span>
+            </div>
+            <div class="col s12">
+              <span class="light-font"> Decentralized Access Demo</span>
+            </div>
+            <div class="col s12">
+              <br>
+              <div class="divider"></div>
+              <br>
+            </div>
+            <div class="col s6">
+              Please enter your address 
+            </div>
+            <div class="col s6">
+              <input id="key" type="text"></input>
+            </div>
+            <div class="col s12">
+              <br>
+              <div class="divider"></div>
+              <br>
+            </div>
+            <div class="col s6">
+              Friend's address 
+            </div>
+            <div class="col s6">
+              <input id="userKey" type="text"></input>
+            </div>
+          </div>
+
+              
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 offset-s3" align="center">
+          <a href="javascript:open();" class="waves-effect waves-light btn action-color white-text">Open the door!</a>
+          <a href="javascript:addOwner();" class="waves-effect waves-light btn action-color white-text">Let my friend in!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  
+
+</body>
+</html>
+
+<!--Scripts -->
+<!--JQuery-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!--Custom Functions (Smooth Scrolling, navigation bar animation) -->
+<script type="text/JavaScript" src="/scripts/main.js"></script>
+<!-- Compiled and minified JavaScript (materialize front end framework) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
